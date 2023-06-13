@@ -1,14 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package penilaian;
 
-/**
- *
- * @author Najmi
- */
-public class NilaiAkhir {
+
+public class NilaiAkhir extends Mahasiswa {
+
+    int uts,uas,tugas;
+  
+    public NilaiAkhir(String nama, String npm, int uts, int uas, int tugas) {
+        super(nama, npm);
+        this.uts = uts;
+        this.uas = uas;
+        this.tugas = tugas;
+    }
+
+    public float hitungNilaiAkhir(){
+     
+      
+        return (uts*30/100)+(uas*30/100)+(tugas*40/100);
     
+    }
+      
 }
